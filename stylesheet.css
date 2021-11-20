@@ -1,7 +1,8 @@
 body{
 	/*background: #8D99AE;*/
 	background: linear-gradient(#8D99AE , #63728B);
-	height: 100vh;
+	height: 100%;
+
 }
 
 .center{
@@ -12,6 +13,10 @@ body{
 .left{
 	display: flex;
 	justify-content: left;
+}
+
+.fill-page{
+	height: 100vh;
 }
 
 .icon{
@@ -40,12 +45,71 @@ body{
 	color: #EDF2F4;
 	text-decoration: none;
 }
+
+.steps{
+	font-family: 'Roboto Mono', monospace;
+	color: #EDF2F4;
+	text-decoration: none;
+	font-size: 20pt;
+}
+
 .video{
 	width: 100%; 
+	opacity: 50%;
 /*	max-height: 600px;*/
 	/*object-fit: cover;*/
 }
 
 a:hover{
 	text-decoration: none;
+}
+
+
+
+/*the drag and drop code*/
+
+#outer-dropzone {
+	height: 610px;
+}
+
+#inner-dropzone {
+  /*height: 80px;*/
+}
+
+.dropzone {
+	z-index:1;
+	position: absolute;
+	background-color: transparent;
+	border: dashed 4px transparent;
+	border-radius: 4px;
+	margin: 10px auto 30px;
+	padding: 10px;
+	width: 81%;
+	transition: background-color 0.3s;
+}
+
+.drop-active {
+
+}
+
+.drop-target {
+}
+
+.drag-drop {
+	z-index:2;
+	position: relative;
+	display: inline-block;
+	min-width: 40px;
+	padding: 2em 0.5em;
+	margin: 1rem 0 0 1rem;
+	color: #fff;
+	touch-action: none;
+	transform: translate(0px, 0px);
+	transition: background-color 0.3s;
+}
+
+.drag-drop.can-drop {
+  color: #000;
+  background-color: #4e4;
+
 }
