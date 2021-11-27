@@ -3,6 +3,9 @@
 /* The dragging code for '.draggable' from the demo above
  * applies to this demo as well so it doesn't have to be repeated. */
 
+video = document.getElementById("video");
+left = document.getElementById("leftHand");
+right = document.getElementById("rightHand");
 
 function dragMoveListener (event) {
     var target = event.target,
@@ -22,8 +25,7 @@ function dragMoveListener (event) {
 
 // enable draggables to be dropped into this
 interact('.dropzone').dropzone({
-  // only accept elements matching this CSS selector
-  accept: '#yes-drop',
+
   // Require a 75% element overlap for a drop to be possible
   overlap: 0.75,
 
@@ -39,22 +41,37 @@ interact('.dropzone').dropzone({
 
     // feedback the possibility of a drop
     dropzoneElement.classList.add('drop-target')
-    draggableElement.classList.add('can-drop')
     draggableElement.textContent = 'Dragged in'
+    video.style.opacity = "1";
+    video.setAttribute("controls","controls")
+    video.play()
+    left.style.opacity="0.5";
+    right.style.opacity="0.5";
+
+    // for testing
+    // video.style.borderRadius = "500px";
+
+
   },
-  ondragleave: function (event) {
+
+
+  // ondragleave: function (event) {
     // remove the drop feedback style
-    event.target.classList.remove('drop-target')
-    event.relatedTarget.classList.remove('can-drop')
-    event.relatedTarget.textContent = 'Dragged out'
-  },
-  ondrop: function (event) {
-    event.relatedTarget.textContent = 'Dropped'
-  },
+    // event.target.classList.remove('drop-target')
+    // event.relatedTarget.classList.remove('can-drop')
+    // event.relatedTarget.textContent = 'Dragged out'
+
+  // },
+
+  // ondrop: function (event) {
+  //   texts.style.height = 513;
+
+  // },
   ondropdeactivate: function (event) {
     // remove active dropzone feedback
     event.target.classList.remove('drop-active')
-    event.target.classList.remove('drop-target')
+    // event.target.classList.remove('drop-target')
+
   }
 })
 

@@ -1,7 +1,11 @@
 body{
 	/*background: #8D99AE;*/
-	background: linear-gradient(#8D99AE , #63728B);
+	background: linear-gradient(#c4e7d4 , #85B79D );
 	height: 100%;
+
+	/*so that gradient streches over the whole background*/
+	background-repeat: no-repeat;
+  background-attachment: fixed;
 
 }
 
@@ -24,17 +28,17 @@ body{
 }
 
 .option:hover{
-	background: #EF233C;
+	background: #F28500;
 }
 
 .option:hover .subtitles{
-	color: #2B2D42;
+	color: #504746;
 }
 
 .title{
 	font-family: 'Roboto Mono', monospace;
 	font-size: 50pt;
-	color: #2B2D42;
+	color: #2B2D42; /*or #504746*/
 }
 .low{
 	margin-top: 150px;
@@ -54,8 +58,9 @@ body{
 }
 
 .video{
-	width: 100%; 
+	height: 80vh; 
 	opacity: 50%;
+	border: 5px solid #85B79D;
 /*	max-height: 600px;*/
 	/*object-fit: cover;*/
 }
@@ -68,24 +73,14 @@ a:hover{
 
 /*the drag and drop code*/
 
-#outer-dropzone {
+/*#outer-dropzone {
 	height: 610px;
 }
 
 #inner-dropzone {
-  /*height: 80px;*/
-}
+}*/
 
 .dropzone {
-	z-index:1;
-	position: absolute;
-	background-color: transparent;
-	border: dashed 4px transparent;
-	border-radius: 4px;
-	margin: 10px auto 30px;
-	padding: 10px;
-	width: 81%;
-	transition: background-color 0.3s;
 }
 
 .drop-active {
@@ -93,6 +88,7 @@ a:hover{
 }
 
 .drop-target {
+
 }
 
 .drag-drop {
@@ -102,14 +98,38 @@ a:hover{
 	min-width: 40px;
 	padding: 2em 0.5em;
 	margin: 1rem 0 0 1rem;
-	color: #fff;
+	/*color: #fff;*/
 	touch-action: none;
 	transform: translate(0px, 0px);
 	transition: background-color 0.3s;
+	height: 250px; 
+	position: absolute; 
+}
+
+.right-hand{
+	right: 0; 
+}
+
+.left-hand{
+	left: 0;
 }
 
 .drag-drop.can-drop {
   color: #000;
-  background-color: #4e4;
+  background-color: red;
+  	/*background: red;*/
+}
+
+.boat{
+	margin: 10px;
+	width: 304px;
+	height: 304px;
+	background: url('images/resultBoatcopy.png');
+	background-position: center;
 
 }
+.boat:hover {
+  background: url('images/resultBoat2copy.png');
+	background-position: center;
+}
+
