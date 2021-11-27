@@ -1,14 +1,8 @@
-<!-- notes: -->
-<!-- 
-	o  
-
- -->
 <!DOCTYPE html>
 <html>
 <head>
 	<meta charset="utf-8">
 	<title>origami</title>
-</head>
 	<!-- bootstrap links -->
 	<meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
@@ -32,38 +26,58 @@
 	<script src="https://cdn.jsdelivr.net/npm/interactjs/dist/interact.min.js"></script>
 	<!-- or -->
 	<script src="https://unpkg.com/interactjs/dist/interact.min.js"></script>
-
+</head>
 <body>
 	<div class="container">
 		<div class="container center" >
 			<div class="row title">
-				Option 1
+				Paper Frog
 			</div>
 		</div>
 
-		<div class="container left" >
-			<div class="row steps">
-				Step 1
-			</div>
-		</div>
+		 <div class="container-sm videoHands">
+		 	<div class="row" >
+	 			<a href="FakeAd.html">
+			 		<div class="col-sm-2 things" style="	
+			 			background: url(../images/stationaryAdBanner.JPG);
+						background-size: contain; 
+						background-position: center; 
+						background-repeat: no-repeat; 
+						height: 500px;">
+			 		</div>
+			 	</a>
 
-		<div class="container center" >
-			<div class="row">
-				<div class="img-rounded dropzone">
+				<div class="col-sm-8 center" >
+					<img id="leftHand" class="drag-drop left-hand" src="../images/handleft.png">
+					<img id="rightHand" class="drag-drop right-hand" src="../images/hand.png">
+					<div class="img-rounded dropzone">
+						<video class="img-rounded video" id="video">
+							<source src="../videos/paperFrog.mov" type="" alt="boat1">
+						</video>
+					</div>
+		 		</div>
 
-					<!-- the drag and drop code from https://interactjs.io/ -->
-					<!-- right hand -->
-					<img id="" class="drag-drop right-hand" src="../images/hand.png">
-					<!-- left hand -->
-					<img id="" class="drag-drop left-hand" src="../images/handleft.png">
+	 			<a href="FakeAd.html">
+			 		<div class="col-sm-2 things" style="	
+			 			background: url(../images/stationaryAdBanner.JPG);
+						background-size: contain; 
+						background-position: center; 
+						background-repeat: no-repeat; 
+						height: 500px;">
+			 		</div>
+			 	</a>
+		 	</div>
+		 </div>
+	</div>
 
-					<!-- the video -->
-					<img src="../placeholders/video.png" id="video" alt="the video" class="img-rounded video">
-				</div>
-			</div>
-		</div>
+	<a href="../index.html">
+	 	<div class="HomeButton">
+	 		<p class="homeButtonText"> Home</p>
+	 	</div>
+	</a>
 
- <script type="text/javascript" src="javescript.js"></script>	
+
+	<script type="text/javascript" src="../javescript.js"></script>	
 	<script type="text/javascript">
 
 	</script>

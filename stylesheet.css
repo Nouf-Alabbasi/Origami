@@ -2,6 +2,10 @@ body{
 	/*background: #8D99AE;*/
 	background: linear-gradient(#c4e7d4 , #85B79D );
 	height: 100%;
+	/*background: linear-gradient(-70deg, #151515, #0C1B33);*/
+	/*background: linear-gradient( #C4E7D4, #2F935C);*/
+	/*background: linear-gradient(-70deg, #c4e7d4 80%, #F28500 10%);*/
+	/*background: linear-gradient(-70deg, #FFF1E0, #FFC175);*/
 
 	/*so that gradient streches over the whole background*/
 	background-repeat: no-repeat;
@@ -12,6 +16,7 @@ body{
 .center{
 	display: flex;
 	justify-content: center;
+	text-align: center;
 }
 
 .left{
@@ -25,7 +30,43 @@ body{
 
 .icon{
 	margin: 10px;
+	border-radius: 20px;
 }
+
+.HomeButton{
+	position: fixed; 
+	bottom: 0; 
+	left: -5px;
+	height: 50px; 
+	width: 100px; 
+	background: #F28500; 
+	margin-top: 20px; 
+	margin-bottom: 30px;
+	border-radius: 3px;
+}
+
+.homeButtonText{
+	margin: 4px; 
+	right: 3px; 
+	position: absolute;
+	font-family: 'Roboto Mono', monospace;
+	color: #EDF2F4;
+	text-decoration: none;
+	font-size: 20pt;
+}
+.HomeButton:hover{
+	box-shadow: 2px 2px #2B2D42;
+	background: #FF910A;
+}
+
+.option{
+	background: rgb(225, 253, 208, 0.2);
+	border-radius: 30px;	
+	/*margin: px;*/
+	/*width: 330px;*/
+	text-align: center;
+}
+
 
 .option:hover{
 	background: #F28500;
@@ -35,10 +76,14 @@ body{
 	color: #504746;
 }
 
+
 .title{
 	font-family: 'Roboto Mono', monospace;
 	font-size: 50pt;
 	color: #2B2D42; /*or #504746*/
+	margin: 30px;
+	background: rgb(225, 253, 208, 0.2);
+	border-radius: 30px;
 }
 .low{
 	margin-top: 150px;
@@ -55,10 +100,13 @@ body{
 	color: #EDF2F4;
 	text-decoration: none;
 	font-size: 20pt;
+/*	height: 500px;*/
+	position: relative;
 }
 
 .video{
-	height: 80vh; 
+	/*height: 80vh; */
+	width: 93%; 
 	opacity: 50%;
 	border: 5px solid #85B79D;
 /*	max-height: 600px;*/
@@ -67,6 +115,12 @@ body{
 
 a:hover{
 	text-decoration: none;
+}
+
+.videoHands{
+	width: 100%; 
+	position: absolute; 
+	left: 0;
 }
 
 
@@ -120,16 +174,48 @@ a:hover{
   	/*background: red;*/
 }
 
+/*icons in index page*/
+
+/*boat*/
 .boat{
 	margin: 10px;
 	width: 304px;
 	height: 304px;
 	background: url('images/resultBoatcopy.png');
 	background-position: center;
-
 }
+/*change icon when one hovers over image*/
 .boat:hover {
   background: url('images/resultBoat2copy.png');
 	background-position: center;
 }
+
+/*crane*/
+.crane{
+	margin: 10px;
+	width: 304px;
+	height: 304px;
+	background: url('images/resultCraneSmall.jpg');
+	background-position: center;
+}
+/*change icon when one hovers over image*/
+.crane:hover {
+  background: url('images/resultCraneSmall.jpg');
+	background-position: center;
+}
+
+/*frog*/
+.frog{
+	margin: 10px;
+	width: 304px;
+	height: 304px;
+	background: url('images/resultFrog.jpg');
+	background-position: center;
+}
+/*change icon when one hovers over image*/
+.frog:hover {
+  background: url('images/resultFrog.jpg');
+	background-position: center;
+}
+
 
