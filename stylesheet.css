@@ -203,7 +203,7 @@ a:hover{
 }
 /*change icon when one hovers over image*/
 .crane:hover {
-  background: url('images/resultCraneSmall.jpg');
+  background: url('images/craneFlip.png');
 	background-position: center;
 }
 
@@ -217,7 +217,7 @@ a:hover{
 }
 /*change icon when one hovers over image*/
 .frog:hover {
-  background: url('images/resultFrog.jpg');
+  background: url('images/frogFlip.png');
 	background-position: center;
 }
 
