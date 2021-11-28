@@ -34,12 +34,8 @@ body{
 	border-radius: 20px;
 }
 
-.HomeButton{
+.Button{
 	position: fixed; 
-	bottom: 0; 
-	left: -5px;
-	height: 50px; 
-	width: 100px; 
 	background: #F28500; 
 	margin-top: 20px; 
 	margin-bottom: 30px;
@@ -55,10 +51,32 @@ body{
 	text-decoration: none;
 	font-size: 20pt;
 }
-.HomeButton:hover{
-	box-shadow: 2px 2px #2B2D42;
+.Button:hover{
+	box-shadow: 2px 4px #2B2D42;
 	background: #FF910A;
 }
+
+
+#HomeButton{
+
+	width: 100px; 
+	height: 50px; 
+	bottom: 0; 
+	left: -5px;
+}
+
+#start{
+	bottom: 0; 
+	right: -5px;
+}
+
+#startText{
+	font-size: 30pt;
+	color: #EDF2F4;
+	margin: 10px;
+	margin-right: 100px;
+}
+
 
 .option{
 	background: rgb(225, 253, 208, 0.2);
@@ -127,25 +145,6 @@ a:hover{
 
 
 /*the drag and drop code*/
-
-/*#outer-dropzone {
-	height: 610px;
-}
-
-#inner-dropzone {
-}*/
-
-.dropzone {
-}
-
-.drop-active {
-
-}
-
-.drop-target {
-
-}
-
 .drag-drop {
 	z-index:2;
 	position: relative;
@@ -174,9 +173,12 @@ a:hover{
   background-color: red;
   	/*background: red;*/
 }
+/*the drag and drop code*/
+
+
+
 
 /*icons in index page*/
-
 /*boat*/
 .boat{
 	margin: 10px;
@@ -219,4 +221,83 @@ a:hover{
 	background-position: center;
 }
 
+
+/*index page*/
+
+/*child*/
+#child{
+	position: absolute;
+	left: 20%;
+	bottom: 0;
+	width: 16%;
+	z-index: 1;
+	animation-name: Thechild; 
+	animation-duration: 0.5s; 
+	animation-iteration-count: infinite; 
+}
+@keyframes Thechild{
+	50% {left: 20%;}
+	50% {left: 22%;}
+}
+
+#childBuble{
+	position: absolute;
+	left: 5%;
+	margin-bottom: 18%;
+	width: 23%;
+	bottom: 0;
+	z-index: 0;
+}
+
+/*mother*/
+#mother{
+	position: absolute;
+	right: 30%;
+	bottom: 0;
+	width: 20%;
+	z-index: 1;
+	animation-name: Themother; 
+	animation-duration: 0.75s; 
+	animation-iteration-count: infinite; 
+
+}
+@keyframes Themother{
+	50% {right: 30%;}
+	50% {right: 33%;}
+}
+#motherBubble{
+	position: absolute;
+	margin-bottom: 37%;
+	width: 30%;
+	right: 15%;
+	bottom:0;
+	z-index: 0;
+}
+
+
+/*ad page*/
+.box{
+	background: #D7DAE5; 
+	margin-top: 50px; 
+	border-style: dotted; 
+	border-width: 50pt; 
+	border-color:#002A32; 
+	animation-name: Thebox; 
+	animation-duration: 0.5s; 
+	animation-iteration-count: infinite; 
+	box-shadow: 5px 5px 5px dimgrey;
+}
+
+@keyframes Thebox {
+	50% {border-color:#002A32;}
+	50% {border-color:#FFFF9F;}
+}
+
+.text{
+	font-size: 50pt; 
+	text-align: center;
+}
+#ad{
+	background: #CAD178;
+}
 

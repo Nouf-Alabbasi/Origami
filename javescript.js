@@ -1,11 +1,33 @@
-// code used and modified from https://interactjs.io/
-
-/* The dragging code for '.draggable' from the demo above
- * applies to this demo as well so it doesn't have to be repeated. */
+child = document.getElementById("child");
+mother = document.getElementById("mother");
 
 video = document.getElementById("video");
 left = document.getElementById("leftHand");
 right = document.getElementById("rightHand");
+
+
+// document.addEventListener("DOMContentLoaded", function(){
+//     child.style.transform = "translateX(50%)";
+// });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//---------------------------------code used and modified from https://interactjs.io/
+
+/* The dragging code for '.draggable' from the demo above
+ * applies to this demo as well so it doesn't have to be repeated. */
 
 function dragMoveListener (event) {
     var target = event.target,
@@ -54,19 +76,6 @@ interact('.dropzone').dropzone({
 
   },
 
-
-  // ondragleave: function (event) {
-    // remove the drop feedback style
-    // event.target.classList.remove('drop-target')
-    // event.relatedTarget.classList.remove('can-drop')
-    // event.relatedTarget.textContent = 'Dragged out'
-
-  // },
-
-  // ondrop: function (event) {
-  //   texts.style.height = 513;
-
-  // },
   ondropdeactivate: function (event) {
     // remove active dropzone feedback
     event.target.classList.remove('drop-active')
