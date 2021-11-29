@@ -267,9 +267,9 @@ a:hover{
 }
 #motherBubble{
 	position: absolute;
-	margin-bottom: 37%;
+	margin-bottom: 19%;
 	width: 30%;
-	right: 15%;
+	right: 13%;
 	bottom:0;
 	z-index: 0;
 }
